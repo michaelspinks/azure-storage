@@ -12,4 +12,10 @@ make build
 make clean
 make test
 
+go get github.com/Azure/azure-storage-blob-go/azblob
+
+
+docker build -t video-storage --file Dockerfile .
+docker run -p 4000:4000 video-storage
+
 001 - init
